@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Raleway');
+
+body{
+  background-color: #283C63;
+  color:#FBE8D3;
+  font-family: 'Raleway';
+}
+h1{
+  font-family: 'Bungee','Raleway',sans-serif;
+  color:#F85F73;
+  font-size:80px;
+  padding:40px;
+}
+h2{
+  font-size: 40px;
+}
