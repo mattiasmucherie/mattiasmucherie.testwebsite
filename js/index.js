@@ -58,6 +58,10 @@ function weatherAPI(lat, lon) {
         $("body").css({"background":"url(images/snow.jpg)","background-size":"auto auto","color":"#2D4059","background-position":"center","color":"#3F72AF"});
         $("h1").css({"color":"#112D4E"})
       }
+      else if (gotType==="Fog"){
+        $("body").css({"background":"url(images/fog.jpg)","background-size":"100% auto","color":"white"});
+        $("h1").css({"color":"#EAEAEA"})
+      }
       else if(gotType==="Rain"|| gotType==="Light Rain" || gotType==="Light Rain Showers" ){
         $("body").css({"background":"url(images/rain.jpg)","background-size":"100% auto","color":"white"});
         $("h1").css({"color":"#EAEAEA"})
