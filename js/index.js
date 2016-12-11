@@ -50,7 +50,7 @@ function weatherAPI(lat, lon) {
       			break;
       	}
       });
-      if(gotType==="Clear"){
+      if(gotType==="Clear") {
         $("body").css({"background":"url(images/clear.jpg)","background-size":"100% auto","color":"#2D4059"});
         $("h1").css({"color":"#EA5455"})
       }
@@ -58,7 +58,7 @@ function weatherAPI(lat, lon) {
         $("body").css({"background":"url(images/snow.jpg)","background-size":"auto auto","color":"#2D4059","background-position":"center","color":"#3F72AF"});
         $("h1").css({"color":"#112D4E"})
       }
-      else if (gotType==="Fog"){
+      else if (gotType==="Fog") {
         $("body").css({"background":"url(images/fog.jpg)","background-size":"100% auto","color":"white"});
         $("h1").css({"color":"#EAEAEA"})
       }
