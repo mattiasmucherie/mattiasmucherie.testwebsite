@@ -17,3 +17,17 @@ h2{
 h3{
   font-size: 35px;
 }
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  right:40%;
+  left:40%;
+  text-align:center;
+}
+#footer>p{
+  padding:auto;
+}
+#footer>p>a{
+  color: #FBE8D3;
+}
