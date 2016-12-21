@@ -51,23 +51,23 @@ function weatherAPI(lat, lon) {
       	}
       });
       if(gotType==="Clear") {
-        $("body").css({"background":"url(images/clear.jpg)","background-size":"100% auto","color":"#2D4059"});
+        $("body").css({"background":"url(images/clear.jpg)","background-size":"cover","background-position": "0 100%","background-attachment": "fixed","color":"#2D4059"});
         $("h1").css({"color":"#EA5455"})
       }
       else if(gotType==="Snow") {
-        $("body").css({"background":"url(images/snow.jpg)","background-size":"auto auto","color":"#2D4059","background-position":"center","color":"#3F72AF"});
+        $("body").css({"background":"url(images/snow.jpg)","background-size":"cover","background-position": "0 100%","background-attachment": "fixed","color":"#3F72AF"});
         $("h1").css({"color":"#112D4E"})
       }
       else if (gotType==="Fog") {
-        $("body").css({"background":"url(images/fog.jpg)","background-size":"100% auto","color":"white"});
+        $("body").css({"background-image":"url(images/fog.jpg)","background-size":"cover","background-position": "0 100%","background-attachment": "fixed","color":"white"});
         $("h1").css({"color":"#EAEAEA"})
       }
       else if(gotType==="Rain"|| gotType==="Light Rain" || gotType==="Light Rain Showers" ){
-        $("body").css({"background":"url(images/rain.jpg)","background-size":"100% auto","color":"white"});
+        $("body").css({"background":"url(images/rain.jpg)","background-size":"cover","background-position": "0 100%","background-attachment": "fixed","color":"white"});
         $("h1").css({"color":"#EAEAEA"})
       }
-      else if (gotType==="Clouds"){
-        $("body").css({"background":"url(images/cloudy.jpg)","background-size":"100% auto","color":"#303841"});
+      else if (gotType==="Clouds"|| gotType==="Overcast"){
+        $("body").css({"background":"url(images/cloudy.jpg)","background-size":"cover","background-position": "0 100%","background-attachment": "fixed","color":"#303841"});
         $("h1").css({"color":"#47555E"})
       }
 
