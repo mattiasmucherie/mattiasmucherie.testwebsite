@@ -20,6 +20,7 @@ function weatherAPI(lat, lon) {
 	var con = "/conditions/q/"
 	var format = ".json"
 	var url = site + api + con + lat + "," + lon + format;
+  console.log(url);
 
 	$.ajax({
 		type: 'GET',
@@ -54,7 +55,7 @@ function weatherAPI(lat, lon) {
         $("body").css({"background":"url(images/clear.jpg)","background-size":"cover","background-position": "100% 0","background-attachment": "fixed","color":"#2D4059"});
         $("h1").css({"color":"#EA5455"})
       }
-      else if(gotType==="Snow") {
+      else if(gotType==="Snow" || gotType==="Light Snow") {
         $("body").css({"background":"url(images/snow.jpg)","background-size":"cover","background-position": "100% 0","background-attachment": "fixed","color":"#3F72AF"});
         $("h1").css({"color":"#112D4E"})
       }
