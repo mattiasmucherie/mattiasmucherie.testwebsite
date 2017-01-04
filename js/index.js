@@ -67,7 +67,7 @@ function weatherAPI(lat, lon) {
         $("body").css({"background":"url(images/rain.jpg)","background-size":"cover","background-position": "100% 0","background-attachment": "fixed","color":"white"});
         $("h1").css({"color":"#EAEAEA"})
       }
-      else if (gotType==="Clouds"|| gotType==="Overcast"){
+      else if (gotType==="Clouds"|| gotType==="Overcast"|| gotType==="Mostly Cloudy"){
         $("body").css({"background":"url(images/cloudy.jpg)","background-size":"cover","background-position": "100% 0","background-attachment": "fixed","color":"#303841"});
         $("h1").css({"color":"#47555E"})
       }
